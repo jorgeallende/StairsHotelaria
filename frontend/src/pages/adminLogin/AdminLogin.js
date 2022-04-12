@@ -1,6 +1,9 @@
 import React from "react";
 import Input from "../../components/Input";
+//Css
 import "./adminLogin.css";
+//Imagen
+import StairsIcon from "../../images/stairs_icon.png"
 
 const AdminLogin = () => {
   return (
