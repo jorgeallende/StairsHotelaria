@@ -1,0 +1,28 @@
+.inputContainer
+{
+    height: 40px;
+    width: 100%;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.iconBox
+{
+    width: 50px;
+    padding: 0 10px;
+}
+
+.inputText
+{
+    flex: 10;
+    
+}
+
+.inputText input
+{
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
