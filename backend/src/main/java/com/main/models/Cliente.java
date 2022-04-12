@@ -1,5 +1,8 @@
 package com.main.models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Cliente extends Person {
     private long codigoCliente;
     private String nacionalidade;

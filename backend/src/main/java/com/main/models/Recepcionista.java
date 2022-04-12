@@ -1,5 +1,8 @@
 package com.main.models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Recepcionista {
     private long codigoRecepcionista;
 

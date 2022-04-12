@@ -2,12 +2,10 @@ package com.main.models;
 
 import org.springframework.lang.NonNull;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
-@Entity
 public class Person implements Serializable {
 
     @Id
