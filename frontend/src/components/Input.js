@@ -9,7 +9,6 @@ const Input = (props) => {
     <>
       <div class="inputContainer">
         <div class="iconBox">
-          {/* { children } */}
           {props.icon == "email" ? (
             <EmailIcon color="disabled" />
           ) : props.icon == "senha" ? (

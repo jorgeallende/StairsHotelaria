@@ -1,0 +1,59 @@
+.container
+{
+    position: absolute;
+    width: 240px;
+    height: 80px;
+    background-color: transparent;
+    right: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .buttonsWrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    margin-top: 5px;
+}
+
+.container .icon
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .dateWrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container .dateWrapper .hour
+{
+    font-weight: bold;
+}
+
+.container .buttonsWrapper .bt
+{
+    border-radius: 30px;
+    width: 70px;
+}
+
+.container .buttonsWrapper .btPerfil
+{
+    background-color: #E55300;
+    color: white;
+
+}
+

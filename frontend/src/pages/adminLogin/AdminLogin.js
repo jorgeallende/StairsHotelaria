@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../../components/Input";
 import { useState } from "react";
+import { useHistory } from "react-router-dom"
 //Css
 import "./adminLogin.css";
 //Imagen
@@ -10,9 +11,12 @@ const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
+  // const history = useHistory();
+
   const submitValues = () => {
     console.log(email);
     console.log(senha);
+    // history.push("/admin/dashboard");
   };
 
   const changeSenha = (value) => {
@@ -55,14 +59,14 @@ const AdminLogin = () => {
               value={senha}
               callback={changeSenha}
               password={true}
-            ></Input>
+            />
           </div>
           <a href="#" class="self-start mt-px text-orange-600">
             Esqueceu sua senha?
           </a>
 
           <div class="mt-16">
-            <a href="#" onClick={() => submitValues()}>
+            <a href="/dashboard" onClick={() => submitValues()}>
               <div class="w-44 h-12 font-bebas-neue text-3xl text-white bg-orange-600 flex items-center justify-center rounded-md">
                 Entrar
               </div>

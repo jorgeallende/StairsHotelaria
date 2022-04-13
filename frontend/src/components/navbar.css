@@ -1,0 +1,58 @@
+.containerNavbar
+{
+    background-color: #245292;
+    width: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerNavbar .imgLogo
+{
+    max-width: 50px;
+    margin: 10px 0;
+    filter: invert(1)
+}
+
+.containerNavbar .divider
+{
+    margin: 5px 0;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(163, 163, 163);
+}
+
+.containerNavbar .menuItem
+{
+    /* background-color: white; */
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerNavbar .menuItem li:not(:last-child)
+{
+    margin-bottom: 15px;
+}
+
+.containerNavbar .menuItem li:first-child
+{
+    margin-top: 10px;
+}
+
+.containerNavbar .menuItem li
+{
+    color: white;
+    margin: 2px solid #E55300;
+}
+
+.containerNavbar .menuItem li:hover
+{
+    color: #E55300;
+    margin: solid 2px #E55300;
+}
