@@ -1,18 +1,25 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Topnavbar from "../../components/Topnavbar";
-import "./dashboard.css";
+import { useState } from "react"
+import DashboardContent from "./DashboardContent"
 
 const Dashboard = () => {
+
+  const [active, setActive] = useState("dashboard");
+
+  const changeActive = (module) => {
+    setActive(module);
+    console.log(active);
+  }
+
   return (
     <>
-      <Topnavbar />
-      <Navbar />
-      <div class="containerDashboard">
-        <h1 class="font-bebas-neue">Dashboard</h1>
-        <h3>Gráfico de frequência</h3>
-        <div class="graphContainer"></div>
-      </div>
+      {/* ------- */}
+
+      {active === "dashboard" ? <DashboardContent /> :
+       active === "agenda" ? <h1>Agenda</h1> : "nada2"}
+
     </>
   );
 };

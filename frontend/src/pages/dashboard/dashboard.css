@@ -1,7 +1,7 @@
 .containerDashboard
 {
     /* Margem para a navbar */
-    margin: 0 50px 0 120px; 
+    margin: 0 70px 0 120px; 
 }
 
 .containerDashboard h1
@@ -14,4 +14,31 @@
     width: 100%;
     background-color: rgb(236, 236, 236);
     height: 300px;
+}
+
+.containerDashboard .grid
+{
+    display: grid;
+    width: 100%;
+    gap: 1.4rem;
+    grid-template-columns: 50% 50%;
+}
+
+.grid .graphContainer
+{
+    grid-column: span 2;   
+}
+
+.grid .infoContainer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(236, 236, 236);
+}
+
+.grid .entriesContainer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(236, 236, 236);
 }

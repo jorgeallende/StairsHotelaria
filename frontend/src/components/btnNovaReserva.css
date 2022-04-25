@@ -1,0 +1,16 @@
+.btnNew
+{
+    /* font-family: "Bebas-neue, cursive"; */
+    background-color: #E55300;
+    border-radius: 10px;
+    color: white;
+    padding: 2px 14px;
+    font-size: 12px;
+    margin-left: 42px;
+    cursor: pointer;
+}
+
+span
+{
+    margin-left: 6px;
+}

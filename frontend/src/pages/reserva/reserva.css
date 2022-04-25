@@ -1,0 +1,20 @@
+.reservaContainer
+{
+    margin: 0 70px 0 120px; 
+}
+
+.reservaContainer h1
+{
+    font-size: 50px;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+}
+
+.reservas_tb
+{
+    margin: 20px 0;
+}

@@ -5,20 +5,37 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ClientLogin from "./pages/clientLogin/ClientLogin";
 import AdminLogin from "./pages/adminLogin/AdminLogin";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Navbar from "../src/components/Navbar";
+import Topnavbar from "../src/components/Topnavbar";
+import Agenda from "./pages/agenda/Agenda";
+import Reservas from "./pages/reserva/Reservas";
 
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/admin" exact>
+        {/* Componentes sem navbars */}
+        <Route path="/" exact>
           <AdminLogin />
         </Route>
-        <Route path="/" exact>
+        {/* <Route path="/" exact>
           <ClientLogin />
-        </Route>
-        <Route path="/dashboard" exact>
-          <Dashboard />
-        </Route>
+        </Route> */}
+
+        {/* Componentes com navbar e topnavbar */}
+        <div>
+          <Navbar />
+          <Topnavbar />
+          <Route path="/dashboard" exact>
+            <Dashboard />
+          </Route>
+          <Route path="/agenda" exact>
+            <Agenda />
+          </Route>
+          <Route path="/reservas" exact>
+            <Reservas />
+          </Route>
+        </div>
       </Switch>
     </Router>
   );

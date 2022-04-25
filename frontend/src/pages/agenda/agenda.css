@@ -1,0 +1,15 @@
+.agendaContainer
+{
+    margin: 0 70px 0 120px; 
+}
+
+.agendaContainer h1
+{
+    font-size: 50px;
+}
+
+.agendaContainer .superior
+{
+    display: flex;
+    align-items: center;
+}

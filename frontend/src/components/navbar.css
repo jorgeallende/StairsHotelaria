@@ -45,14 +45,17 @@
     margin-top: 10px;
 }
 
-.containerNavbar .menuItem li
+.navbar-item
 {
     color: white;
-    margin: 2px solid #E55300;
 }
 
-.containerNavbar .menuItem li:hover
+.navbar-item:hover
 {
     color: #E55300;
-    margin: solid 2px #E55300;
+}
+
+.navbar-item.is-active
+{
+    color: #E55300;
 }
