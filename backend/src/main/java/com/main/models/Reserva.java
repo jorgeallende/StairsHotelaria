@@ -1,18 +1,25 @@
 package com.main.models;
-
-
 import java.sql.Date;
 
-
 import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.lang.NonNull;
 
 @Entity
 public class Reserva {
+
+    @Id
     private long id;
-    private Quarto quartoReservado;
-    private Cliente ocupante;
-    private Recepcionista responsavel;
+    @NonNull
+    private Long idQuartoReservado;
+    @NonNull
+    private Long idOcupante;
+    @NonNull
+    private Long idResponsavel;
+    @NonNull
     private Date checkIn;
+    @NonNull
     private Date checkOut;
 
 
@@ -24,28 +31,28 @@ public class Reserva {
         this.id = id;
     }
 
-    public Quarto getQuartoReservado() {
-        return quartoReservado;
+    public Long getQuartoReservado() {
+        return idQuartoReservado;
     }
 
-    public void setQuartoReservado(Quarto quartoReservado) {
-        this.quartoReservado = quartoReservado;
+    public void setQuartoReservado(Long quartoReservado) {
+        this.idQuartoReservado = quartoReservado;
     }
 
-    public Cliente getOcupante() {
-        return ocupante;
+    public Long getOcupante() {
+        return idOcupante;
     }
 
-    public void setOcupante(Cliente ocupante) {
-        this.ocupante = ocupante;
+    public void setOcupante(Long ocupante) {
+        this.idOcupante = ocupante;
     }
 
-    public Recepcionista getResponsavel() {
-        return responsavel;
+    public Long getResponsavel() {
+        return idResponsavel;
     }
 
-    public void setResponsavel(Recepcionista responsavel) {
-        this.responsavel = responsavel;
+    public void setResponsavel(Long responsavel) {
+        this.idResponsavel = responsavel;
     }
 
     public Date getCheckIn() {

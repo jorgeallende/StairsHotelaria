@@ -1,9 +1,20 @@
 package com.main.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.lang.NonNull;
+
+@Entity
 public class Quarto {
+
+    @Id
     private long id;
+    @NonNull
     private int capacidadePessoas;
+    @NonNull
     private String tipoQuarto;
+    @NonNull
     private String local;
 
     public long getId() {

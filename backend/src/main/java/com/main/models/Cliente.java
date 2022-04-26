@@ -2,9 +2,14 @@ package com.main.models;
 
 import javax.persistence.Entity;
 
+import org.springframework.lang.NonNull;
+
 @Entity
 public class Cliente extends Person {
+
+    @NonNull
     private long codigoCliente;
+    @NonNull
     private String nacionalidade;
     
 
