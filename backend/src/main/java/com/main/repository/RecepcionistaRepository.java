@@ -1,5 +1,4 @@
 package com.main.repository;
-import com.main.models.Quarto;
 import com.main.models.Recepcionista;
 
 import org.springframework.data.repository.CrudRepository;
