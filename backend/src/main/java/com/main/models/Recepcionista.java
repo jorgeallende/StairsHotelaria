@@ -3,7 +3,7 @@ package com.main.models;
 import javax.persistence.Entity;
 
 @Entity
-public class Recepcionista {
+public class Recepcionista extends Person{
     private long codigoRecepcionista;
 
     public long getCodigoRecepcionista() {
