@@ -23,8 +23,8 @@ public class RecepcionistaService {
         return listaRecepcionista;
     }
 
-    public Recepcionista createRecepcionista(Recepcionista cliente){
-        return recepcionistaRepository.save(cliente);
+    public Recepcionista createRecepcionista(Recepcionista recepcionista){
+        return recepcionistaRepository.save(recepcionista);
     }
 
     public void deleteRecepcionista(long id){
