@@ -37,7 +37,7 @@ const Reservas = () => {
   return (
     <div className="reservaContainer">
       <div className="header">
-        <h1 className="font-bebas-neue">Reservas</h1>
+        <h1 className="font-bebas-neue">Check-ins</h1>
         <BtnNovaReserva />
       </div>
 

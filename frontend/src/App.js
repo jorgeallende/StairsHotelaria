@@ -9,6 +9,7 @@ import Navbar from "../src/components/Navbar";
 import Topnavbar from "../src/components/Topnavbar";
 import Agenda from "./pages/agenda/Agenda";
 import Reservas from "./pages/reserva/Reservas";
+import NewReserva from "./pages/new-reserva/NewReserva";
 
 export default function App() {
   return (
@@ -34,6 +35,9 @@ export default function App() {
           </Route>
           <Route path="/reservas" exact>
             <Reservas />
+          </Route>
+          <Route path="/new-reserva" exact>
+            <NewReserva />
           </Route>
         </div>
       </Switch>
